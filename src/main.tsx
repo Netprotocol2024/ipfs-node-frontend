@@ -11,7 +11,7 @@ import AppConfigProvider from "@/components/layouts/AppConfigProvider";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
  
-    <BrowserRouter>
+    <BrowserRouter basename="/dashboard">
       <QueryClientProvider client={queryClient}>
         <AppConfigProvider>
           <App />
