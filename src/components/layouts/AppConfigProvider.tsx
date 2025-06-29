@@ -13,7 +13,6 @@ import PageLoader from "../template/PageLoader";
 interface AppConfigContextProps {
   isLoading: boolean;
   setIsLoading: (isLoading: boolean) => void;
-  refreshToken: () => Promise<void>;
 }
 
 const AppConfigContext = createContext<AppConfigContextProps | undefined>(
@@ -25,7 +24,7 @@ const AppConfigProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <AppConfigContext.Provider
-      value={{ isLoading, refreshToken:"refreshToken", setIsLoading }}
+      value={{ isLoading, setIsLoading }}
     >
       {isLoading ? <PageLoader /> : children}
     </AppConfigContext.Provider>
