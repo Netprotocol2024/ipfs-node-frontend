@@ -19,7 +19,7 @@ import {
 import { getVpsMetrics } from "@/services/backend.api"
 const chartConfig = {
   cpu: {
-    label: "CPU Usage (MB)",
+    label: "CPU Usage (%)",
     color: "var(--chart-1)",
   },
 } as const
