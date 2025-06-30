@@ -13,7 +13,7 @@ export const Logo = ({ className }: { className?: string }) => {
     <Link to={PATHS.HOME}>
       <div className='flex gap-3 justify-center items-center h-full w-full'>
         <img 
-          src={'/img/Logo.png'} 
+          src={'/dashboard/img/Logo.png'} 
           className={classes} 
           alt="Company Logo" 
         />

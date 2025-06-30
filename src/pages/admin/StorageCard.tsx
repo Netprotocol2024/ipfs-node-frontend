@@ -72,7 +72,7 @@ export default function ChartPieInteractive() {
       if (data) {
         setDesktopData([
           { month: "january", desktop: Number(data.usedGB.toFixed(2)), fill: "var(--color-january)" },
-  { month: "may", desktop: Number(data.freeGB.toFixed(2)), fill: "var(--color-may)" },
+  { month: "may", desktop: Number(1800 - data.usedGB.toFixed(2)), fill: "var(--color-may)" },
         ]);
       }
     };
