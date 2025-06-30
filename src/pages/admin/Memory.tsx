@@ -63,7 +63,8 @@ export default function MemoryUsageChart() {
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={data}>
               <XAxis dataKey="day" tick={{ fill: "var(--foreground)" }} />
-              <YAxis tick={{ fill: "var(--foreground)" }} domain={[0, totalMemory]} />
+              <YAxis tick={{ fill: "var(--foreground)" }}                 domain={[0, (dataMax) => Math.ceil(dataMax * 1.1)]}
+ />
               <Tooltip content={<ChartTooltipContent />} />
               <Bar dataKey="memory" radius={[4, 4, 0, 0]}>
                 {data.map((_, i) => (

@@ -75,7 +75,8 @@ export default function PlanUsageChart() {
                 </linearGradient>
               </defs>
               <XAxis dataKey="day" tick={{ fill: "var(--foreground)" }} />
-              <YAxis tick={{ fill: "var(--foreground)" }} domain={[0, 100]} />
+              <YAxis tick={{ fill: "var(--foreground)" }}                 domain={[0, (dataMax) => Math.ceil(dataMax * 1.1)]}
+ />
               <Tooltip content={<ChartTooltipContent />} />
               <Area type="monotone" dataKey="plan" stroke="var(--chart-3)" fillOpacity={1} fill="url(#colorPlan)" />
             </AreaChart>
