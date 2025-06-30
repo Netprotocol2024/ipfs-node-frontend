@@ -58,7 +58,7 @@ export default function CpuUsageChart() {
               <XAxis dataKey="day" tick={{ fill: "var(--foreground)" }} />
               <YAxis
                 tick={{ fill: "var(--foreground)" }}
-                domain={[0, (dataMax) => Math.ceil(dataMax * 1.1)]}
+                domain={[0, (dataMax) => Math.ceil(dataMax * 1.01)]}
               />
               <Tooltip content={<ChartTooltipContent />} />
               <Bar dataKey="cpu" radius={[4, 4, 0, 0]}>
