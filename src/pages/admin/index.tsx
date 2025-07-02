@@ -15,10 +15,10 @@ const Dashboard = () => {
         <HeroSection/>
          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
           <StorageCard />
-          <PlanUsageChart/>
+          {/* <PlanUsageChart/> */}
           {/* You can add MemoryCard and PlanUsageCard here similarly */}
-          <MemoryUsageChart/>
-          <CPUCard />
+          {/* <MemoryUsageChart/> */}
+          {/* <CPUCard /> */}
         </div>
         <NetworkActivity/>
         </div>
